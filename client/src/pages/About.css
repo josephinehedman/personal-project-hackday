@@ -1,0 +1,56 @@
+.main-container--about-page {
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.header__about {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.header__paragraph {
+    margin-bottom: 4rem;
+    font-style: italic;
+}
+
+.info-box {
+    background-color: wheat;
+    max-width: 1000px;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+td, th {
+    text-align: left;
+    padding: 2px;
+  }
+
+  .th--bold {
+    font-style: bold;
+    font-size: 1.2rem;
+}
+
+@media all and (min-width:840px) {
+    .main-container--about-page {
+        margin-top: 4rem;
+    }
+    .header__about {
+        font-size: 5rem;
+    }
+
+    .header__paragraph {
+        margin-bottom: 6rem;
+        font-size: 1.2rem;
+    }
+
+    td, th {
+        font-size: 1.3rem;
+        padding: 8px;
+    }
+
+    .th--bold {
+        font-size: 1.5rem;
+    }
+  }

@@ -1,0 +1,36 @@
+.header {
+    background-color: #323A46;
+    height: 100px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.header__navbar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-list__links {
+    list-style-type: none;
+    margin-left: 1rem;
+}
+
+.nav-list__links--right {
+    margin-left: 2rem;
+}
+
+@media all and (min-width:840px) {
+    .header {
+        font-size: 1.5rem;
+    }
+  }
