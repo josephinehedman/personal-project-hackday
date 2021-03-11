@@ -31,7 +31,7 @@ function App() {
   return (
     <>
       <Router>
-        <Header />
+      <Header />
         <Switch>
           <Route path="/" exact>
             <Home getData={getData} />

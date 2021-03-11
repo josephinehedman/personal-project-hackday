@@ -1,12 +1,12 @@
 .btn-get-activity {
     background-color: rgb(230, 132, 12);
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 2rem;
     border-radius: 0.5rem;
     border: none;
-    font-size: 1.5rem;
     color: white;
     width: 50vw;
-    max-width: 520px;
+    max-width: 220px;
+    font-size: 1.1rem;
 }
 
 @media all and (min-width:840px) {
@@ -14,5 +14,6 @@
     .btn-get-activity {
         font-size: 2rem;
         padding: 1rem;
+        max-width: 520px;
      }
   }

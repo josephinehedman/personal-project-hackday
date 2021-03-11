@@ -7,6 +7,7 @@ const About = () => (
       <p className="header__paragraph">An inspiration page to find fun activites</p>
       <div className="info-box">
         <table className="info-table">
+        <tbody>
           <tr>
             <th className="th--bold">
               What?
@@ -34,6 +35,7 @@ const About = () => (
             </td>
             <td>The number of people that this activity could involve</td>
           </tr>
+          </tbody>
         </table>
       </div>
     </section>

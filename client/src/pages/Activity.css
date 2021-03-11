@@ -1,21 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
-
+.main-content--activity-page {
+    margin-bottom: 2rem;
+}
+.header__activity{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
 
 .activity-card, 
 .error-card {
-    margin: 3rem auto;
-    max-width: 1000px;
+    margin: 0.5rem 1rem;
     background-color: rgb(245, 211, 146);
     text-align: center;
-    padding: 2.5rem 1.5rem;
+    padding: 1.5rem 1rem;
     border-radius: 0.5rem;
-}
-
-.header__activity {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    text-align: center;
-    font-size: 2rem;
 }
 
 .activity-card__header {
@@ -24,32 +22,12 @@
     color: white;
 }
 
-.activity-card__info {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .card__info__type {
     background-color: rgb(230, 132, 12);
     padding-bottom: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     color: white;
     font-style: italic;
-}
-
-.card__info--circle { 
-    line-height: 80px;
-    width: 80px; 
-    height: 80px; 
-    border-radius: 50%; 
-    background-color: pink;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  } 
-.card__info__text{
-    font-size: 0.8rem;
 }
 
 .input-container {
@@ -57,41 +35,63 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
-.form {
-    margin-bottom: 2rem;
-}
-
-.no_participants {
+  .card__info--circle { 
+    line-height: 80px;
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    background-color: pink;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem auto;
+  } 
+  .no_participants {
     border-radius: 0.2rem;
     font-family: 'Merriweather', serif;
     border:none;
     background-color: thistle;
     padding: 0.3rem;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     text-align: center;
 }
-  @media all and (min-width:840px) {
+.form {
+    margin-bottom: 1rem;
+}
+
+@media all and (min-width: 840px) {
+    .header__activity{ 
+        font-size: 3rem;
+    }
+
+    .activity-card, 
+    .error-card { 
+        max-width: 1000px;
+        margin: 2rem auto;
+    }
 
     .activity-card__header {
         font-size: 2rem;
     }
 
-    .card__info--circle {
+    .activity-card__info {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .card__info--circle {  
         line-height: 200px;
         width: 200px; 
         height: 200px; 
-        font-size: 2.5rem;
-     }
-
-     .label__participants, 
-     .no_participants {
-         margin-top: 2rem;
-         font-size: 1.8rem;
-     }
-
-     .header__activity {
-        font-size: 5rem;
+        font-size: 3rem;
     }
-  }
+
+    .no_participants, 
+    .label__participants { 
+        margin-top: 1.2rem;
+        font-size: 1.5rem;
+    }
+}
