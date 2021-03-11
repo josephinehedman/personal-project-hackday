@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component should render the button component and match snapshot 1`] = `
+<button
+  className="btn btn-get-activity"
+  onClick={[Function]}
+>
+  Get Activity
+</button>
+`;

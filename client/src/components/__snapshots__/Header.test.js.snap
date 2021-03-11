@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders header that matches snapshot 1`] = `
+<header
+  className="header"
+>
+  <nav
+    className="header__navbar"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <h1
+        className="navbar__logo"
+      >
+        Tombola
+      </h1>
+    </a>
+    <ul
+      className="nav-list"
+    >
+      <a
+        href="/about"
+        onClick={[Function]}
+      >
+        <li
+          className="nav-list__links nav-list__links--left"
+        >
+          About
+        </li>
+      </a>
+      <a
+        href="/activity"
+        onClick={[Function]}
+      >
+        <li
+          className="nav-list__links nav-list__links--right"
+        >
+          Activity
+        </li>
+      </a>
+    </ul>
+  </nav>
+</header>
+`;
