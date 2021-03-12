@@ -43,7 +43,7 @@
     width: 80px; 
     height: 80px; 
     border-radius: 50%; 
-    background-color: rgb(249, 223, 139);
+    background-color: rgb(172, 204, 238);
     text-align: center;
     font-size: 1.5rem;
     margin: 1rem auto;
@@ -52,7 +52,7 @@
     border-radius: 0.2rem;
     font-family: 'Work Sans', sans-serif;
     border:none;
-    background-color: rgb(249, 223, 139);
+    background-color: rgb(172, 204, 238);
     padding: 0.3rem;
     margin-left: 0.5rem;
     text-align: center;
