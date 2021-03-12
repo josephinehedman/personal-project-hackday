@@ -4,7 +4,7 @@ const About = () => (
   <main className="main-content">
     <section className="main-container--about-page">
       <h1 className="header__about">About Tombola</h1>
-      <p className="header__about-paragraph">An inspiration page to find fun activites</p>
+      <p className="header__about-paragraph">Inspiration page to find fun activites</p>
       <article className="info-box">
         <table className="info-table">
         <tbody>
@@ -40,8 +40,8 @@ const About = () => (
             Type
             </td>
             <td> Type of activity
-              <i> ["education", "recreational", "social", "diy", "charity",
-              "cooking", "relaxation", "music", "busywork"]</i></td>
+              <i> education, recreational, social, diy, charity,
+              cooking, relaxation, music, busywork</i></td>
           </tr>
           </tbody>
         </table>
