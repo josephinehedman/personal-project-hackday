@@ -4,8 +4,8 @@ const About = () => (
   <main className="main-content">
     <section className="main-container--about-page">
       <h1 className="header__about">About Tombola</h1>
-      <p className="header__paragraph">An inspiration page to find fun activites</p>
-      <div className="info-box">
+      <p className="header__about-paragraph">An inspiration page to find fun activites</p>
+      <article className="info-box">
         <table className="info-table">
         <tbody>
           <tr>
@@ -20,7 +20,7 @@ const About = () => (
             <td>
               Possibility
             </td>
-            <td>An percentage describing how possible an event is to do with
+            <td>A percentage describing how possible an event is with
         100% being the most accessible</td>
           </tr>
           <tr>
@@ -35,9 +35,17 @@ const About = () => (
             </td>
             <td>The number of people that this activity could involve</td>
           </tr>
+          <tr>
+            <td>
+            Type
+            </td>
+            <td> Type of activity
+              <i> ["education", "recreational", "social", "diy", "charity",
+              "cooking", "relaxation", "music", "busywork"]</i></td>
+          </tr>
           </tbody>
         </table>
-      </div>
+      </article>
     </section>
   </main>
 );

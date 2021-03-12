@@ -2,16 +2,17 @@
     text-align: center;
 }
 
-.header__paragraph {
+.header__about-paragraph {
     margin-bottom: 2rem;
     font-style: italic;
 }
 
 .info-box {
-    background-color: wheat;
+    background-color: white;
     margin: 0 1rem;
     padding: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
+    border: 1px rgba(255, 192, 203, 0.742) solid;
 }
 
 td, th {
@@ -23,6 +24,7 @@ td, th {
   .th--bold {
     font-style: bold;
     font-size: 1rem;
+    color: #348872;
 }
 
 @media all and (min-width:840px) {
@@ -32,6 +34,10 @@ td, th {
     .info-box {
         max-width: 1000px;
         margin: auto;
+    }
+
+    .info-table {
+        padding: 1.5rem 0.8rem;
     }
 
     td, th {

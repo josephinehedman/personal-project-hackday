@@ -12,10 +12,12 @@ const Activity = ({ activity, getData }) => {
       <h1 className="header__activity">Activity Generator</h1>
         {activity.error ? <div className="error-card"> <h1>Sorry, Couldn't get your activity. Please try again</h1></div>
           : <section className="activity-card">
-              <h1 className="activity-card__header">{activity.activity}</h1>
+            <article className="activity-card__header">
+            <h2 className="activity-card__heading">{activity.activity}</h2>
                 <p className="card__info__type">
                   Type: {activity.type}
                 </p>
+            </article>
               <article className="activity-card__info">
                  <div className="card__info">
                    <p className="card__info--circle">
@@ -24,25 +26,25 @@ const Activity = ({ activity, getData }) => {
                    <p className="card__info__text"> Possibility to do</p>
                  </div>
               <div className="card__info">
-                {activity.price === 0 && <p className="card__info--circle card__info--price">
+                {activity.price === 0 && <p className="card__info--circle">
                 Free</p> }
-               {activity.price > 0 && activity.price <= 0.33 && <p className="card__info--circle card__info--price">
+               {activity.price > 0 && activity.price <= 0.33 && <p className="card__info--circle">
                 $</p> }
-                {activity.price >= 0.34 && activity.price <= 0.66 && <p className="card__info--circle card__info--price">
+                {activity.price >= 0.34 && activity.price <= 0.66 && <p className="card__info--circle">
                 $</p> }
-                {activity.price >= 0.64 && <p className="card__info--circle card__info--price">
+                {activity.price >= 0.64 && <p className="card__info--circle">
                 $$$</p> }
                <p className="card__info__text"> Price range (free-$$$)</p>
               </div>
               <div className="card__info">
-                <p className="card__info--circle card__info__participants">
+                <p className="card__info--circle">
                   {activity.participants}
                 </p>
                 <p className="card__info__text"> Participants</p>
               </div>
             </article>
           </section>}
-      <div className="input-container">
+      <section className="input-container">
       <form className="form">
           <label className="label__participants" htmlFor="no_participants">Number of participants </label>
           <select className="no_participants" name="no_participants" value={participants} onChange={e => setParticipants(e.target.value)}>
@@ -55,7 +57,7 @@ const Activity = ({ activity, getData }) => {
           </select>
         </form>
       <Button getData={getData} participants={participants} />
-      </div>
+      </section>
     </main>
   );
 };

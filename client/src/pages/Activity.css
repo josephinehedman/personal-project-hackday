@@ -3,31 +3,31 @@
 }
 .header__activity{
     text-align: center;
-    font-size: 1.5rem;
     margin-bottom: 1rem;
+    font-size: 1.3rem;
 }
 
 .activity-card, 
 .error-card {
     margin: 0.5rem 1rem;
-    background-color: rgb(245, 211, 146);
+    background-color: white;
+    border: 1px rgba(255, 192, 203, 0.742) solid;
     text-align: center;
     padding: 1.5rem 1rem;
-    border-radius: 0.5rem;
+    border-radius: 2rem;
 }
 
 .activity-card__header {
     padding: 0.5rem;
-    background-color: rgb(230, 132, 12);
+    background-color:  #8e8cc2;
     color: white;
+    font-size: 0.7rem;
 }
 
 .card__info__type {
-    background-color: rgb(230, 132, 12);
-    padding-bottom: 1rem;
-    margin-bottom: 1.5rem;
-    color: white;
+    padding-top: 0.3rem;
     font-style: italic;
+    font-size: 0.8rem;
 }
 
 .input-container {
@@ -43,16 +43,16 @@
     width: 80px; 
     height: 80px; 
     border-radius: 50%; 
-    background-color: pink;
+    background-color: rgb(249, 223, 139);
     text-align: center;
     font-size: 1.5rem;
     margin: 1rem auto;
   } 
   .no_participants {
     border-radius: 0.2rem;
-    font-family: 'Merriweather', serif;
+    font-family: 'Work Sans', sans-serif;
     border:none;
-    background-color: thistle;
+    background-color: rgb(249, 223, 139);
     padding: 0.3rem;
     margin-left: 0.5rem;
     text-align: center;
@@ -73,13 +73,17 @@
     }
 
     .activity-card__header {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .activity-card__info {
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
+
+    .card__info__type {
+        font-size: 1.2rem;
     }
 
     .card__info--circle {  
